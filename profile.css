@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#profile-card {
+    position: relative; 
+    width: 400px;
+    margin: 0 auto;
+    padding: 40px 30px;
+    border: 1px solid #000000;
+    background: linear-gradient(135deg, #FFA585, #FFEDA0);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #1abc9c;
+    color: #ffffff;
+    padding: 5px 12px;
+    font-size: 0.85em;
+    font-weight: bold;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 4px solid #2c3e50;
+    border-radius: 50%;
+    display: block;
+}
+
+.decorative-icon {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    background-color: #f39c12;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+}
+
+#profile-card .bio-content h2 {
+    margin: 0 0 10px 0;
+    color: #000000;
+}
+
+#profile-card .bio-content p {
+    margin: 0;
+    color: #000000;
+    line-height: 1.5;
+    font-size: 0.95em;
+}
+
+@media screen and (max-width: 600px) {
+    #profile-card {
+        width: 100%;
+        max-width: 350px;
+        padding: 30px 20px;
+    }
+    
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .decorative-icon {
+        width: 28px;
+        height: 28px;
+        bottom: 2px;
+        left: 2px;
+    }
+
+    .badge {
+        font-size: 0.75em;
+        padding: 4px 8px;
+        top: 10px;
+        right: 10px;
+    }
+}
